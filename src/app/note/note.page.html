@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Note</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      {{note.date}}
+    </ion-item>
+    <ion-item>
+      <ion-label>Mood</ion-label>
+      {{note.mood}}
+    </ion-item>
+    <ion-item>
+      <ion-label>Note</ion-label>
+      <p>{{note.note}}</p>
+    </ion-item>
+    <ion-item>
+      <ion-label>Smile Photo</ion-label>
+      <img src="{{note.photo}}">
+    </ion-item>
+  </ion-list>
+
+</ion-content>

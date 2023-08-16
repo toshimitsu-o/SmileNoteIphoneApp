@@ -1,0 +1,6 @@
+{
+	"appId": "au.com.webento.note",
+	"appName": "Smile Note",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

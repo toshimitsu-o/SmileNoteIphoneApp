@@ -1,0 +1,18 @@
+<ion-content>
+  <img src="../assets/logo.png" class="logo" />
+  <p>How are you feeling today?<br>Login and let's smile!</p>
+  <ion-card>
+    <ion-card-content>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" placeholder="Email" name="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click) ="login()">Login</ion-button>
+</ion-card-content>
+</ion-card>
+  
+</ion-content>

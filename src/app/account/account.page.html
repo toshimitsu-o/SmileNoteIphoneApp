@@ -1,0 +1,44 @@
+<ion-header>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Account</h1>
+  <ion-list>
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="account.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text" [(ngModel)]="account.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Phone</ion-label>
+      <ion-input type="text" [(ngModel)]="account.phone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Gender</ion-label>
+      <ion-list>
+        <ion-radio-group mode="ios" [(ngModel)]="account.gender">
+          <ion-item>
+            <ion-label>Female</ion-label>
+            <ion-radio slot="start" value="f">Female</ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Male</ion-label>
+            <ion-radio slot="start" value="m"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Other</ion-label>
+            <ion-radio slot="start" value="o"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="account.password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="updateAcc()">Update</ion-button>
+</ion-content>

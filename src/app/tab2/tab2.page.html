@@ -1,17 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content fullscreen class="ion-padding">
+  <h1>Track</h1>
+  <ion-card>
+    <canvas #barCanvas height="200"></canvas>
+    <ion-card-header>
+      <ion-card-subtitle>Track Your Mood</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-chip outline="true" (click)="filterMood(7)">
+        7 days
+      </ion-chip>
+      <ion-chip outline="true" (click)="filterMood(15)">
+        15 days
+      </ion-chip>
+      <ion-chip outline="true" (click)="filterMood(30)">
+        30 days
+      </ion-chip>
+    </ion-card-content>
+  </ion-card>
+  <h2>Your Smiles</h2>
+      <div *ngFor="let note of notes; index as i" class="smiles">
+        <img src="{{note.photo}}" />
+      </div>
 </ion-content>
